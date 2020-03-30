@@ -1,0 +1,8 @@
+<h2> ToDo  index</h2>
+<% @todos.each do |todo|%>
+<div>
+<%= todo.id %>
+<%= link_to todo.title , todo %>
+<%= todo.completed %>
+</div>
+<% end %>
