@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'todos/new', to:'todos#new'
   get 'todos/:id', to:'todos#show' ,as:'todo'
   post 'todos', to: 'todos#create'
